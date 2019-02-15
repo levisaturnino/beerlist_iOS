@@ -17,10 +17,9 @@ class InsertViewController: UIViewController {
     
     @IBAction func insertButtonAction(_ sender: Any) {
         
+        
         let beer = Beer(name: insertTextField.text ?? "",price: priceTextField.text ?? "")
         
-
-
         Database.shared.insert(add: beer)
         navigationController?.popViewController(animated: true)
         

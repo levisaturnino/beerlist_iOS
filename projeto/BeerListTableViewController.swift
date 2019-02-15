@@ -67,7 +67,7 @@ class BeerListTableViewController: UITableViewController {
         AppUtility.lockOrientation(.portrait)
         // Or to rotate and lock
         // AppUtility.lockOrientation(.portrait, andRotateTo: .portrait)
-        Defaults.saveListBeer(Database.shared.list())
+      //  Defaults.saveListBeer(Database.shared.list())
         
         self.beers = Database.shared.list()
         tableView.reloadData()
