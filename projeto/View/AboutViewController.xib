@@ -38,9 +38,8 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="App BeerLists" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VNv-Je-cSQ">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="App BeerLists" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VNv-Je-cSQ">
                     <rect key="frame" x="122" y="426" width="107" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -51,17 +50,20 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6DV-Gh-kRu">
-                    <rect key="frame" x="151" y="506" width="74" height="30"/>
-                    <state key="normal" title="what flow?"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6DV-Gh-kRu">
+                    <rect key="frame" x="115" y="505" width="127" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="what flow again?"/>
+                    <connections>
+                        <action selector="actionFlow:" destination="-1" eventType="touchUpInside" id="7ou-hM-fFC"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="6DV-Gh-kRu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="151" id="9Q3-Wc-9YX"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6DV-Gh-kRu" secondAttribute="trailing" constant="150" id="O6e-9S-Pc8"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="6DV-Gh-kRu" secondAttribute="bottom" constant="131" id="abz-hr-iyc"/>
-                <constraint firstItem="6DV-Gh-kRu" firstAttribute="top" secondItem="QS1-We-lyc" secondAttribute="bottom" constant="24" id="hVj-Oo-B2i"/>
+                <constraint firstItem="QS1-We-lyc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="151" id="FfW-AE-6u3"/>
+                <constraint firstItem="QS1-We-lyc" firstAttribute="centerX" secondItem="VNv-Je-cSQ" secondAttribute="centerX" id="Ndg-D3-cDQ"/>
+                <constraint firstItem="QS1-We-lyc" firstAttribute="top" secondItem="VNv-Je-cSQ" secondAttribute="bottom" constant="14" id="RD0-8h-m7m"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="132" y="154.27286356821591"/>

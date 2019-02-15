@@ -47,8 +47,11 @@ class BeerListTableViewController: UITableViewController {
             hideNavigationButton()
         }
         
+      
     }
     
+    
+
     func hideNavigationButton() {
         addButton?.isEnabled = false
         addButton?.tintColor = UIColor.clear
@@ -61,10 +64,12 @@ class BeerListTableViewController: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
+        AppUtility.lockOrientation(.portrait)
+        // Or to rotate and lock
+        // AppUtility.lockOrientation(.portrait, andRotateTo: .portrait)
         Defaults.saveListBeer(Database.shared.list())
         
-      //  self.beers = Defaults.
+        self.beers = Database.shared.list()
         tableView.reloadData()
     }
 

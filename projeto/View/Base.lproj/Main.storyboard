@@ -134,7 +134,9 @@
                             </collectionViewCell>
                         </cells>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="dzA-45-DvA"/>
+                    <navigationItem key="navigationItem" id="dzA-45-DvA">
+                        <barButtonItem key="leftBarButtonItem" id="UEg-ov-duo"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="proCollectionView" destination="aLe-Hy-7Vp" id="yJk-id-Jf1"/>
                     </connections>

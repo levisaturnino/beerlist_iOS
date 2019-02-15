@@ -40,8 +40,12 @@ struct Defaults {
         return Model((UserDefaults.standard.value(forKey: userSessionKey) as? [String: String]) ?? [:])
     }(())
     
-    
+    static func clearFlowData(){
+        UserDefaults.standard.removeObject(forKey: userFlowKey)
+    }
     static func clearUserData(){
         UserDefaults.standard.removeObject(forKey: userSessionKey)
     }
+    
+   
 }

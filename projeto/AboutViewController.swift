@@ -10,6 +10,10 @@ import UIKit
 
 class AboutViewController: UIViewController {
 
+    @IBAction func actionFlow(_ sender: Any) {
+    Defaults.clearFlowData()
+    
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
